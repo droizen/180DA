@@ -9,7 +9,7 @@ while True:
     while True:
         data = conn.recv(4096)
         if not data: break
-        from_client += data.encode()
+        from_client += data.decode()
         print(from_client)
         conn.send("I am SERVER\n")
     conn.close()
