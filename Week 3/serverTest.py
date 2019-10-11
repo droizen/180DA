@@ -11,7 +11,7 @@ while True:
         if not data: break
         from_client += data.decode()
         print(from_client)
-        conn.send("I am SERVER\n")
+        conn.send("I am SERVER\n".encode())
     conn.close()
     print('client disconnected')
  
