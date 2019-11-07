@@ -10,8 +10,8 @@ def get_ip_address(ifname):
         struct.pack('256s', ifname[:15])
     )[20:24])
 
->>> get_ip_address('lo')
-'127.0.0.1'
+#>>> get_ip_address('lo')
+#'127.0.0.1'
 
->>> get_ip_address('eth0')
-'38.113.228.130'
+#>>> get_ip_address('eth0')
+#'38.113.228.130'
